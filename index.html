@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/heart.css">
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/slidr.js"></script>
+</head>
+<body>
+    <div id="slidr-div">
+        <div class="page" id="p1" data-slidr="one">
+            <div class="wrapper">
+                <div class="heart x1"></div>
+                <div class="heart x2"></div>
+                <div class="heart x3"></div>
+                <div class="heart x4"></div>
+                <div class="heart x5"> </div>
+                <div class="altheart x6"></div>
+            </div>
+            <div class="main-text">
+                <div class="div-center">
+                    <h1>Happy Birthday!</h1>
+                    <div id="slidr-inline-dynamic" class="slidr-text" style="display: inline; width: 6rem;">
+                        <div data-slidr="one"><h3>ကလေးလေး</h3></div>
+                        <div data-slidr="two"><h3>အီးပေလေး</h3></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="page" id="p2" data-slidr="two">
+            <div class="small-image">
+                <img src="assets/img/1.jpeg" alt="Deer">
+            </div>
+            <div class="text">
+                <p>
+                    ၁။ <br> Happy Birthday ပါ ကလေးလေးရေ
+
+                    21 နှစ်ဖြစ်သွားပြီနော်
+
+                    အရင်လိုကလေးဆိုးလေး လုပ်နေအုန်းမှာလား 
+
+                    ကို့ကိုပဲ ဆိုးတော့နော်
+
+                    အလုပ်တွေကြိုးစားပြီး ကိုကို ဂုဏ်ယူရတဲ့ ကလေးလေး ဖြစ်ပါစေနော်
+                </p>
+            </div>
+        </div>
+        <div class="page" id="p3" data-slidr="three">
+            <div class="small-image">
+                <img src="assets/img/2.jpg" alt="Mountains">
+            </div>
+            <div class="text">
+                <p>
+                    ၂။ <br>
+
+                    တစ်သက်လုံး တူတူဖြတ်သန်းချင်ပါတယ်
+
+                    ဘဝကြီးကို ကလေးနဲ့ ကုန်ဆုံးချင်တယ်
+
+                    အတူတူရှိနေတဲ့အခါ ကို့အတွက် အရာရာပြည့်စုံနေပြီလေ
+
+                    ကိုတို့ အတူတူရှိကြမယ်နော်
+                </p>
+            </div>
+        </div>
+        <div class="page" id="p4" data-slidr="four">
+            <div class="small-image">
+                <img src="assets/img/3.jpg" alt="Sun">
+            </div>
+            <div class="text">
+                <p>
+                    ၃။ <br>
+
+                    လှနေတဲ့ ကလေးလေးပေါ့ဒါက
+
+                    ဒီလောက်ချစ်ဖို့ကောင်းတဲ့ ကလေးလေးကို ရထားတာ
+
+                    ကို့အတွက်ပြည့်စုံနေပါပြီ
+                </p>
+            </div>
+        </div>
+        <div class="page" id="p5" data-slidr="five">
+            <div class="small-image">
+                <img src="assets/img/4.jpeg" alt="Sun">
+            </div>
+            <div class="text">
+                <p>
+                    ၄။ <br>
+
+                    ရင့်ကျက်နဲ့ ပုံစံနဲ့ ကို့ကို ချွဲပြီးဆိုးနေတဲ့ ကလေးလေးပါ
+
+                    ရင်ခွင်ထဲ ထည့်ဖက်ထားရင် ဇိမ်ကြပြီး ငြိမ်နေတဲ့ ဝက်ဆိုးလေးပါ
+                </p>
+            </div>
+        </div>
+        <div class="page" id="p6" data-slidr="six">
+            <div class="small-image">
+                <img src="assets/img/5.jpeg" alt="Sun">
+            </div>
+            <div class="text">
+                <p>
+                    ၅။ <br>
+
+                    မွေးနေ့တွေ ဘုရားတူတူသွားချင်တယ်
+
+                    ကုသိုလ်တွေ တူတူလုပ်ရင်း နောက်ဘဝအတွက် ရေစက်တွေ ဆက်မယ်လေ
+
+                    သံသရာအဆက်ဆက်ထိ ဒီကလေးဆိုးနဲ့ပေါင်းဖက်ရလိုပါ၏
+                </p>
+            </div>
+        </div>
+        <div class="page" id="p7" data-slidr="seven">
+            <div class="big-image">
+                <img src="assets/img/6.jpg" alt="Pixel">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    slidr.create('slidr-div', {
+        // after: function(e) { console.log('in: ' + e.in.slidr); },
+        // before: function(e) { console.log('out: ' + e.out.slidr); },
+        breadcrumbs: true,
+        controls: 'border',
+        direction: 'horizontal',
+        fade: false,
+        keyboard: true,
+        overflow: false,
+        pause: false,
+        theme: '#222',
+        timing: { 'cube': '0.8s ease-in' },
+        touch: true,
+        transition: 'cube'
+    }).start();
+    slidr.create('slidr-inline-dynamic',{
+        controls: 'none',
+        overflow: false,
+        timing: { 'cube': '0.8s ease-in' },
+        transition: 'cube'
+    }).add('v', ['one', 'two', 'one']).auto(3000, 'up');
+</script>
+</html>
